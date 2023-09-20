@@ -32,15 +32,15 @@ def run_rectangle() :
 
     # right line
     for y in range(90, 540 + 1, 10) :
-        render_all(750, y)
+        render_all(x, y)
 
     # top line    
     for x in range(750, 50 - 1, -10) :
-        render_all(x, 540)
+        render_all(x, y)
 
     # left line
     for y in range(540, 90 - 1, -10) :
-        render_all(50, y)
+        render_all(x, y)
 
 while (True) :
     run_circle()
